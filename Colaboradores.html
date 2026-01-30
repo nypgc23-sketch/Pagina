@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Colaboradores - Facultad de Ciencias de la Computación</title>
+<link rel="stylesheet" href="estilos.css">
+<script src="colaboradores.js" defer></script>
+</head>
+
+<body>
+
+<!-- 🔹 Barra superior institucional -->
+<div class="barra-superior">
+    <a href="https://www.buap.mx/" target="_blank" rel="noopener noreferrer" class="link-buap">
+        Benemérita Universidad Autónoma de Puebla
+    </a>
+
+    <div class="enlaces-superiores">
+        <a href="index.html">Inicio</a>
+        <a href="https://www.autoservicios.buap.mx/" target="_blank" rel="noopener noreferrer">
+            Autoservicios BUAP
+        </a>
+    </div>
+</div>
+
+<!-- 🔹 Encabezado -->
+<header>
+    <div class="encabezado-contenido">
+        <img src="imagenes/fcc_logo.png" alt="Logo FCC" class="logo-encabezado">
+        <div class="texto-encabezado">
+            <h1>Facultad de Ciencias de la Computación</h1>
+            <h2>Colaboradores</h2>
+        </div>
+    </div>
+</header>
+
+<!-- 🔹 Menú principal -->
+<nav>
+<ul>
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="inicio.html">¿Quiénes somos?</a></li>
+    <li><a href="cuerposacademicos.html">Cuerpos Académicos</a></li>
+    <li><a href="Proyectos.html">Proyectos</a></li>
+    <li><a href="Miembros.html">Miembros</a></li>
+
+    <li class="dropdown">
+        <a href="Colaboradores.html" class="dropbtn activo">Colaboradores ▾</a>
+        <div class="dropdown-content">
+            <a href="Colaboradores.html?colaborador=veronica">Verónica Abad Espinoza</a>
+            <a href="Colaboradores.html?colaborador=claudia">Claudia Blanca González Calleros</a>
+            <a href="Colaboradores.html?colaborador=elena">Elena Cristian López González</a>
+            <a href="Colaboradores.html?colaborador=maria">María de los Milagros Cruz Ramos</a>
+            <a href="Colaboradores.html?colaborador=rosa">Rosa Isela Sandoval Cruz</a>
+            <a href="Colaboradores.html?colaborador=liliana">Liliana Rodríguez Vizzuet</a>
+            <a href="Colaboradores.html?colaborador=joseareli">José Areli Carrera Román</a>
+        </div>
+    </li>
+
+    <li><a href="Documentos.html">Documentos</a></li>
+    <li><a href="Administracion.html">Administración</a></li>
+    <li><a href="Conferencias.html">Conferencias</a></li>
+</ul>
+</nav>
+
+<!-- 🔹 Contenido principal -->
+<main class="colaboradores-container">
+    <h2>Colaboradores</h2>
+    <div id="colaboradores-info" class="grid-colaboradores">
+
+        <!-- Cada ficha tiene un ID único -->
+        <div id="veronica" class="colaborador-card">
+            <img src="imagenes/veronica.jpeg" alt="Verónica Abad Espinoza">
+            <div class="overlay">
+                <h3>Verónica Abad Espinoza</h3>
+                <p><strong>Ingeniería en Ciencias de la Computación</strong><br>Servicio Social</p>
+                <p><a href="mailto:veronica.abad@correo.com" class="correo">📧 Enviar correo</a></p>
+            </div>
+        </div>
+
+        <div id="claudia" class="colaborador-card">
+            <img src="imagenes/claudia.png" alt="Claudia Blanca González Calleros">
+            <div class="overlay">
+                <h3>Claudia Blanca González Calleros</h3>
+                <p><strong>Doctorado en Sistemas y Ambientes Educativos</strong><br>Tesista</p>
+                <p><a href="mailto:chayg@hotmail.com" class="correo">📧 Enviar correo</a></p>
+            </div>
+        </div>
+
+        <div id="elena" class="colaborador-card">
+            <img src="imagenes/elena.jpeg" alt="Elena Cristian López González">
+            <div class="overlay">
+                <h3>Elena Cristian López González</h3>
+                <p><strong>Licenciatura en Ciencias de la Computación</strong><br>Tesista</p>
+                <p><a href="mailto:zepor_anele17@hotmail.com" class="correo">📧 Enviar correo</a></p>
+            </div>
+        </div>
+
+        <div id="maria" class="colaborador-card">
+            <img src="imagenes/maria.png" alt="María de los Milagros Cruz Ramos">
+            <div class="overlay">
+                <h3>María de los Milagros Cruz Ramos</h3>
+                <p><strong>Doctorado en Sistemas y Ambientes Educativos</strong><br>Tesista</p>
+                <p><a href="mailto:tutor.milycruz@gmail.com" class="correo">📧 Enviar correo</a></p>
+            </div>
+        </div>
+
+        <div id="rosa" class="colaborador-card">
+            <img src="imagenes/sandoval.jpg" alt="Rosa Isela Sandoval Cruz">
+            <div class="overlay">
+                <h3>Rosa Isela Sandoval Cruz</h3>
+                <p><strong>Doctorado en Sistemas y Ambientes Educativos</strong><br>Tesista</p>
+                <p><a href="mailto:rosa.sandoval@utchetumal.edu.mx" class="correo">📧 Enviar correo</a></p>
+            </div>
+        </div>
+
+        <div id="liliana" class="colaborador-card">
+            <img src="imagenes/liliana.jpeg" alt="Liliana Rodríguez Vizzuet">
+            <div class="overlay">
+                <h3>Liliana Rodríguez Vizzuet</h3>
+                <p><strong>Doctorado en Sistemas y Ambientes Educativos</strong><br>Tesista</p>
+                <p><a href="mailto:lilianavizz@hotmail.com" class="correo">📧 Enviar correo</a></p>
+            </div>
+        </div>
+
+        <div id="joseareli" class="colaborador-card">
+            <img src="imagenes/roman.jpeg" alt="José Areli Carrera Román">
+            <div class="overlay">
+                <h3>José Areli Carrera Román</h3>
+                <p><strong>Doctorado en Sistemas y Ambientes Educativos</strong><br>Tesista</p>
+                <p><a href="mailto:joseareli.carreraroman@viep.com" class="correo">📧 Enviar correo</a></p>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+<!-- 🔹 Pie -->
+<footer class="footer-buap">
+    <div class="info-footer">
+        <p><strong>Benemérita Universidad Autónoma de Puebla</strong></p>
+        <p><i class="icon-facebook"></i> Facultad de Ciencias de la Computación</p>
+        <p><i class="icon-location"></i> Calle 14 Sur y Av. San Claudio, Puebla, México</p>
+    </div>
+    <div class="copyright">
+        <p>© 2026 Copyright</p>
+    </div>
+</footer>
+
+</body>
+</html>

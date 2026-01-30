@@ -1,0 +1,501 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #222;
+    background-color: #fff;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* ----------- Barra de navegación superior ----------- */
+.barra-superior {
+    background-color: #004B8D; 
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 15px;
+    font-size: 14px;
+}
+
+.link-buap {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.link-buap:hover {
+    text-decoration: underline;
+}
+
+.enlaces-superiores {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* barra superior */
+.enlaces-superiores a {
+    color: white;
+    text-decoration: underline;
+    font-weight: bold;
+    margin-left: 12px;
+    transition: color 0.3s ease;
+}
+
+.enlaces-superiores a:hover {
+    color: #00b3b3;
+    text-decoration: underline;
+}
+
+
+/* ----------- Encabezado ----------- */
+header {
+    background-color: #004B8D;
+    color: white;
+    padding: 20px 40px;
+    border-bottom: 4px solid #002E5D;
+}
+
+.encabezado-contenido {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+}
+
+.logo-encabezado {
+    width: 70px;
+    height: auto;
+}
+
+.texto-encabezado {
+    text-align: left;
+}
+
+.texto-encabezado h1 {
+    font-size: 1.8em;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.texto-encabezado h2 {
+    font-weight: 400;
+    color: #dcdcdc;
+    font-size: 1.1em;
+}
+
+/* ----------- Menú principal ----------- */
+nav {
+    background-color: #f3f3f3;
+    border-bottom: 2px solid #004B8D;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav ul li a {
+    display: block;
+    padding: 12px 18px;
+    text-decoration: none;
+    color: #222;
+    border-bottom: 2px solid transparent;
+}
+
+nav ul li a:hover,
+nav ul li a.activo {
+    color: #004B8D;
+    border-bottom: 2px solid #004B8D;
+    background-color: #e7f0f8;
+}
+
+/* ----------- Contenido ----------- */
+.seccion {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: justify;
+    line-height: 1.7;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.seccion h2 {
+    color: #004B8D;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    border-left: 5px solid #0018b1;
+    padding-left: 10px;
+}
+
+/* ----------- Inicio ----------- */
+.inicio-contenido {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px 40px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.inicio-contenido section {
+    margin-bottom: 40px;
+}
+
+.inicio-contenido h2 {
+    color: #004B8D;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-left: 5px solid #1500b1;
+    padding-left: 10px;
+}
+
+.inicio-contenido p,
+.inicio-contenido li {
+    text-align: justify;
+    line-height: 1.7;
+    font-size: 16px;
+    color: #333;
+}
+
+.inicio-contenido ol {
+    margin: 20px 50px;
+}
+
+.inicio-contenido li {
+    margin-bottom: 12px;
+}
+
+/* ----------- Carrusel ----------- */
+.carrusel {
+    width: 100%;
+    max-width: 900px;
+    margin: 50px auto;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    position: relative;
+}
+
+.carrusel .imagenes {
+    display: flex;
+    animation: slide 12s infinite;
+}
+
+.carrusel img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    flex-shrink: 0;
+    background-color: #fff;
+}
+
+@keyframes slide {
+    0% { transform: translateX(0); }
+    30% { transform: translateX(0); }
+    35% { transform: translateX(-100%); }
+    65% { transform: translateX(-100%); }
+    70% { transform: translateX(-200%); }
+    100% { transform: translateX(-200%); }
+}
+
+/* ----------- Pie de página ----------- */
+.footer-buap {
+    background-color: #004B8D;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+    font-size: 15px;
+}
+
+.footer-buap .info-footer p {
+    margin: 8px 0;
+}
+
+.footer-buap .copyright {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #dcdcdc;
+}
+
+.icon-facebook::before,
+.icon-location::before {
+    content: "";
+}
+
+/* ----------- Responsivo ----------- */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    .carrusel img {
+        width: 100%;
+        height: auto;
+    }
+
+    .logo-encabezado {
+        width: 50px;
+    }
+
+    .texto-encabezado h1 {
+        font-size: 1.4em;
+    }
+
+    .inicio-contenido {
+        padding: 15px;
+    }
+}
+@media (max-width: 768px) {
+    .grid-colaboradores {
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    }
+
+    .colaborador-card img {
+        height: 250px;
+    }
+}
+
+/* ----------- Proyectos ----------- */
+.acordeon {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.maestro-btn {
+    background-color: #003366;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    border-radius: 6px;
+    margin-top: 5px;
+}
+
+.maestro-btn:hover {
+    background-color: #0055a5;
+}
+
+.contenido {
+    background-color: #f1f1f1;
+    display: none;
+    overflow: hidden;
+    padding: 15px;
+    border-radius: 6px;
+}
+
+.contenido ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contenido li {
+    margin: 8px 0;
+}
+
+.contenido a {
+    background-color: #007bff;
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-left: 10px;
+}
+
+.contenido a:hover {
+    background-color: #0056b3;
+}
+
+
+/* Colaboradores-------*/
+/* ======== SECCIÓN COLABORADORES ======== */
+.colaboradores-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.colaboradores-container h2 {
+    text-align: center;
+    color: #004B8D;
+    font-size: 2em;
+    margin-bottom: 40px;
+}
+
+/* ======== MENÚ DESPLEGABLE (COLABORADORES) ======== */
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+nav ul li {
+    position: relative;
+}
+
+/* Botón principal del menú */
+nav ul li a.dropbtn {
+    display: block;
+    padding: 12px 18px;
+    text-decoration: none;
+    color: #222;
+    background-color: transparent;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+nav ul li a.dropbtn:hover,
+nav ul li a.activo {
+    color: #004B8D;
+    border-bottom: 2px solid #004B8D;
+}
+
+/* Contenedor del contenido desplegable */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 230px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+    z-index: 100;
+    margin-top: 2px;
+    animation: fadeIn 0.3s ease;
+}
+
+/* Elementos dentro del menú */
+.dropdown-content a {
+    color: #444;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+    transition: all 0.2s;
+    border-left: 4px solid transparent;
+}
+
+.dropdown-content a:hover {
+    background-color: #f3f3f3;
+    border-left: 4px solid #00B3FF;
+    color: #004B8D;
+}
+
+/* Mostrar el menú al pasar el mouse */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Animación de aparición */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-5px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* ======== TARJETAS DE COLABORADORES ======== */
+.grid-colaboradores {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+/* Tarjeta individual */
+.colaborador-card {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.colaborador-card img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    transition: transform 0.4s ease, filter 0.4s ease;
+    border-radius: 12px;
+}
+
+.colaborador-card:hover img {
+    transform: scale(1.1);
+    filter: brightness(0.4) blur(2px);
+}
+
+/* Ficha informativa (efecto tipo Netflix) */
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 0;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    overflow: hidden;
+    transition: height 0.4s ease;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.colaborador-card:hover .overlay {
+    height: 100%;
+}
+
+.overlay h3 {
+    margin-bottom: 10px;
+    font-size: 1.3em;
+    color: #00b3ff;
+}
+
+.overlay p {
+    font-size: 0.95em;
+    line-height: 1.5;
+    color: #f1f1f1;
+}
+
+/* Botón de correo */
+.correo {
+    color: #00b3ff;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 6px 10px;
+    border-radius: 6px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.correo:hover {
+    background-color: #00b3ff;
+    color: #fff;
+}
+.btn-volver {
+    background-color: #004B8D;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s;
+}
+.btn-volver:hover {
+    background-color: #0066cc;
+}
